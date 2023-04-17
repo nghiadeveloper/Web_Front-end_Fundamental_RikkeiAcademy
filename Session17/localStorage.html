@@ -8,18 +8,20 @@
 </head>
 <body>
     <script>
-        // var user = {
-        //     userName: "admin",
-        //     password: "123456"
-        // };
-        // // Lưu đối tượng vào localStorage
-        // localStorage.setItem('user', JSON.stringify(user));
-        // // Lấy dữ liệu lưu trong localStorage
-        // var data = JSON.parse(localStorage.getItem('user'));
+        var user = {
+            userName: "admin",
+            password: "123456"
+        };
 
-        // console.log(data.userName);
-        //Xóa dữ liệu lưu trong localStorage
-        //localStorage.removeItem('user');
+        // Lưu đối tượng vào localStorage
+        localStorage.setItem('user', JSON.stringify(user));
+
+        // Lấy dữ liệu lưu trong localStorage
+        var data = JSON.parse(localStorage.getItem('user'));
+        console.log(data.userName);
+        
+        // Xóa dữ liệu lưu trong localStorage
+        // localStorage.removeItem('user');
     </script>
 </body>
 </html>
